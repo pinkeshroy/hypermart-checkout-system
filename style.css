@@ -1,0 +1,128 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e0ecff, #f5f9ff);
+  color: #333;
+  text-align: center;
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.input-section {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  padding: 0.8rem;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.counter {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s ease;
+}
+
+.counter.active {
+  border: 2px solid #16a34a;
+}
+
+.counter h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.counter p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.counter .customers::before {
+  content: "👥 ";
+}
+
+.counter .queue li::before {
+  content: "🛒 ";
+  margin-right: 5px;
+}
+
+.queue {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.queue li {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.counter .total {
+  font-weight: bold;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bolder;
+}

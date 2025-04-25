@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypermart Checkout System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hypermart Checkout System</h1>
+      <p>Real-time queue management system</p>
+      <form class="input-section" onsubmit="assignCustomer(event)">
+        <input
+          type="number"
+          id="itemInput"
+          placeholder="Enter number of items"
+          min="1"
+          required
+        />
+        <button type="submit">Checkout Items</button>
+      </form>
+      <div class="counters">
+        <div class="counter" id="counter-0">
+          <div class="heading">
+            <span class="title">Counter 1</span>
+            <span><span class="customers">0</span> customers</span>
+          </div>
+
+          <ul class="queue"></ul>
+          <p>Total Items: <span class="total">0</span></p>
+        </div>
+        <div class="counter" id="counter-1">
+          <div class="heading">
+            <span class="title">Counter 2</span>
+            <span><span class="customers">0</span> customers</span>
+          </div>
+
+          <ul class="queue"></ul>
+          <p>Total Items: <span class="total">0</span></p>
+        </div>
+        <div class="counter" id="counter-2">
+          <div class="heading">
+            <span class="title">Counter 3</span>
+            <span><span class="customers">0</span> customers</span>
+          </div>
+          <ul class="queue"></ul>
+          <p>Total Items: <span class="total">0</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
